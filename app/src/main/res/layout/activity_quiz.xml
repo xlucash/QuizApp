@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <Button
+        android:id="@+id/answer1Button"
+        android:layout_width="match_parent"
+        android:layout_above="@id/answer2Button"
+        android:layout_height="wrap_content"
+        android:text="Answer 1" />
+    <Button
+        android:id="@+id/answer2Button"
+        android:layout_width="match_parent"
+        android:layout_above="@id/answer3Button"
+        android:layout_height="wrap_content"
+        android:text="Answer 2" />
+    <Button
+        android:id="@+id/answer3Button"
+        android:layout_width="match_parent"
+        android:layout_above="@id/answer4Button"
+        android:layout_height="wrap_content"
+        android:text="Answer 3" />
+    <Button
+        android:id="@+id/answer4Button"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="Answer 4" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/answer1Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question" />
+</RelativeLayout>
