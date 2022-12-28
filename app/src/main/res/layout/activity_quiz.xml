@@ -3,39 +3,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuizActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#7C7B7B"
+    tools:context=".activity.QuizActivity">
 
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_above="@id/answer1Button"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp">
+        <TextView
+            android:id="@+id/questionText"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_18sdp"
+            android:text="Question" />
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/timer"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_above="@id/answer1Button"
+        />
     <Button
         android:id="@+id/answer1Button"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_above="@id/answer2Button"
         android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
         android:text="Answer 1" />
     <Button
         android:id="@+id/answer2Button"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_above="@id/answer3Button"
         android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
         android:text="Answer 2" />
     <Button
         android:id="@+id/answer3Button"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_above="@id/answer4Button"
         android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
         android:text="Answer 3" />
     <Button
         android:id="@+id/answer4Button"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_75sdp"
+        android:layout_above="@id/nextBtn"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
         android:text="Answer 4" />
 
-    <TextView
-        android:id="@+id/questionText"
-        android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_above="@id/answer1Button"
+    <Button
+        android:id="@+id/nextBtn"
         android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
-        android:text="Question" />
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:text="Next Question" />
+
 </RelativeLayout>

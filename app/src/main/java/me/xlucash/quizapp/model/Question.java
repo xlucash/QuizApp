@@ -1,6 +1,6 @@
-package me.xlucash.quizapp;
+package me.xlucash.quizapp.model;
 
-public class QuestionModel {
+public class Question {
     private String question;
     private String answerOne;
     private String answerTwo;
@@ -8,7 +8,7 @@ public class QuestionModel {
     private String answerFour;
     private String answerCorrect;
 
-    public QuestionModel(String question, String answerOne, String answerTwo, String answerThree, String answerFour, String answerCorrect) {
+    public Question(String question, String answerOne, String answerTwo, String answerThree, String answerFour, String answerCorrect) {
         this.question = question;
         this.answerOne = answerOne;
         this.answerTwo = answerTwo;

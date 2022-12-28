@@ -1,17 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:gravity="center"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".EndActivity">
+    tools:context=".activity.EndActivity">
 
     <TextView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
+        android:id="@+id/resultTitleText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_22sdp"
+        android:textSize="@dimen/_30sdp"
+        android:layout_above="@id/relativeLayout"
         android:gravity="center"
-        android:text="" />
-</LinearLayout>
+        android:text="Result"
+
+        />
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_marginBottom="@dimen/_100sdp"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/goBackBtn">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cpb_background_progressbar_color="@color/red"
+            app:cpb_background_progressbar_width="@dimen/_10sdp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/green"
+            app:cpb_progressbar_width="10dp"
+            app:cpb_progress_max="10"
+            app:cpb_round_border="false"
+            />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22sdp"
+            android:layout_centerInParent="true"
+            android:text="5/10"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/goBackBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_150sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:text="Go back to menu"
+        android:textSize="@dimen/_20sdp"
+        />
+</RelativeLayout>
