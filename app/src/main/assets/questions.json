@@ -1,84 +1,84 @@
 {
 	"questions": [
 		{
-			"question": "1. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "____________ uses access modifiers to protect variables and hide them within a class.",
+			"answer1": "Encapsulation",
+			"answer2": "Inheritance",
+			"answer3": "Abstraction",
+			"answer4": "Polymorphism",
+			"correct": "Encapsulation"
 		},
 		{
-			"question": "2. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "Which of the following is a checked Exception?",
+			"answer1": "FileNotFoundException",
+			"answer2": "ExceptionInInitializerError",
+			"answer3": "ClassCastException",
+			"answer4": "RuntimeException",
+			"correct": "FileNotFoundException"
 		},
 		{
-			"question": "3. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "Which of these access modifiers can be used for a top level interface?",
+			"answer1": "private",
+			"answer2": "All of the other options",
+			"answer3": "protected",
+			"answer4": "public",
+			"correct": "public"
 		},
 		{
-			"question": "4. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "Given the string \"strawberries\" saved in a variable called fruit, what would fruit.substring(2, 5) return?",
+			"answer1": "rawb",
+			"answer2": "raw",
+			"answer3": "awb",
+			"answer4": "traw",
+			"correct": "raw"
 		},
 		{
-			"question": "5. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "The runtime system starts your program by calling which function first?",
+			"answer1": "print",
+			"answer2": "iterative",
+			"answer3": "hello",
+			"answer4": "main",
+			"correct": "main"
 		},
 		{
-			"question": "6. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "Object-oriented programming is a style of programming where you organize your program around ___ rather than ___ and data rather than logic.",
+			"answer1": "functions; actions",
+			"answer2": "objects; actions",
+			"answer3": "actions; functions",
+			"answer4": "actions; objects",
+			"correct": "objects; actions"
 		},
 		{
-			"question": "7. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "What method can be used to create a new instance of an object?",
+			"answer1": "another instance",
+			"answer2": "field",
+			"answer3": "constructor",
+			"answer4": "private method",
+			"correct": "constructor"
 		},
 		{
-			"question": "8. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "Which type of variable keeps a constant value once it is assigned?",
+			"answer1": "non-static",
+			"answer2": "static",
+			"answer3": "final",
+			"answer4": "private",
+			"correct": "final"
 		},
 		{
-			"question": "9. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "Which is the most reliable expression for testing whether the values of two string variables are the same?",
+			"answer1": "string1 == string2",
+			"answer2": "string1 = string2",
+			"answer3": "string1.matches(string2)",
+			"answer4": "string1.equals(string2)",
+			"correct": "string1.equals(string2)"
 		},
 		{
-			"question": "10. What is the answer?",
-			"answer1": "One",
-			"answer2": "Two",
-			"answer3": "Three",
-			"answer4": "Four",
-			"correct": "One"
+			"question": "Which keyword lets you call the constructor of a parent class?",
+			"answer1": "parent",
+			"answer2": "super",
+			"answer3": "this",
+			"answer4": "new",
+			"correct": "super"
 		}
 	]
 }
