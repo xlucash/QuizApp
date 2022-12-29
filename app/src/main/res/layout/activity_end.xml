@@ -6,6 +6,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/light_orange_blur"
     tools:context=".activity.EndActivity">
 
     <TextView
@@ -52,7 +53,7 @@
             android:text="5/10"
             />
     </RelativeLayout>
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/goBackBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,6 +62,7 @@
         android:layout_marginBottom="@dimen/_150sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         android:text="Go back to menu"
+        android:background="@drawable/round_back_orange"
         android:textSize="@dimen/_20sdp"
         />
 </RelativeLayout>

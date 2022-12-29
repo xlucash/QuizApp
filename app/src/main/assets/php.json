@@ -1,0 +1,84 @@
+{
+	"questions": [
+		{
+			"question": "What is PHP mainly used for?",
+			"answer1": "Web development",
+			"answer2": "Game development",
+			"answer3": "Mobile app development",
+			"answer4": "Data analysis",
+			"correct": "Web development"
+		},
+		{
+			"question": "All variables in PHP start with which symbol?",
+			"answer1": "&",
+			"answer2": "%",
+			"answer3": "_",
+			"answer4": "$",
+			"correct": "$"
+		},
+		{
+			"question": "Which of the following is NOT a way to end a PHP statement?",
+			"answer1": ";",
+			"answer2": ".",
+			"answer3": "!",
+			"answer4": "None of the above",
+			"correct": "."
+		},
+		{
+			"question": "What is the correct way to access the third element in an array?",
+			"answer1": "$array[2]",
+			"answer2": "$array[3]",
+			"answer3": "$array(2)",
+			"answer4": "$array(3)",
+			"correct": "$array[2]"
+		},
+		{
+			"question": "What function is used to output text in PHP?",
+			"answer1": "echo",
+			"answer2": "print",
+			"answer3": "output",
+			"answer4": "display",
+			"correct": "echo"
+		},
+		{
+			"question": "Object-oriented programming is a style of programming where you organize your program around ___ rather than ___ and data rather than logic.",
+			"answer1": "functions; actions",
+			"answer2": "objects; actions",
+			"answer3": "actions; functions",
+			"answer4": "actions; objects",
+			"correct": "objects; actions"
+		},
+		{
+			"question": "Which is the correct format for adding a comment to a PHP script?",
+			"answer1": "all of these answers",
+			"answer2": "#This is a comment",
+			"answer3": "/* This is a comment */",
+			"answer4": "// This is a comment",
+			"correct": "all of these answers"
+		},
+		{
+			"question": "You want to list the modules available in your PHP installation. What command should you run?",
+			"answer1": "php -h",
+			"answer2": "php info",
+			"answer3": "php -v",
+			"answer4": "php -m",
+			"correct": "php -m"
+		},
+		{
+			"question": "What is the value of $result in this calculation? $result = 25 % 6;",
+			"answer1": "1",
+			"answer2": "4",
+			"answer3": "1.5",
+			"answer4": "4.167",
+			"correct": "1"
+		},
+		{
+			"question": "Which PHP variable name is invalid?",
+			"answer1": "$Double",
+			"answer2": "$double",
+			"answer3": "$_2times",
+			"answer4": "$2times",
+			"correct": "$2times"
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"questions": [
+		{
+			"question": "Which choice best defines C#'s asynchronous programming model?",
+			"answer1": "reactive",
+			"answer2": "inherited callback",
+			"answer3": "task-based",
+			"answer4": "callback-based",
+			"correct": "task-based"
+		},
+		{
+			"question": "How could you retrieve information about a class, as well as create an instance at runtime?",
+			"answer1": "reflection",
+			"answer2": "serialization",
+			"answer3": "abstraction",
+			"answer4": "dependency injection",
+			"correct": "reflection"
+		},
+		{
+			"question": "Lambda expressions are often used in tandem with which of the following?",
+			"answer1": "Namespaces",
+			"answer2": "LINQ",
+			"answer3": "Type Aliasing",
+			"answer4": "Assemblies",
+			"correct": "LINQ"
+		},
+		{
+			"question": "Which choice represents a class that inherits behavior from a base class?",
+			"answer1": "a second base class",
+			"answer2": "a revised class",
+			"answer3": "a derived class",
+			"answer4": "a parent class",
+			"correct": "a derived class"
+		},
+		{
+			"question": "When would you use generics in your code?",
+			"answer1": "to increase code performance",
+			"answer2": "all of these answers",
+			"answer3": "when code reuse is a priority",
+			"answer4": "when type safety is important",
+			"correct": "all of these answers"
+		},
+		{
+			"question": "When an object in C# is serialized, what is it converted to?",
+			"answer1": "XML",
+			"answer2": "JSON",
+			"answer3": "byte stream",
+			"answer4": "value stream",
+			"correct": "byte stream"
+		},
+		{
+			"question": "What are the four keywords associated with exception handling in C#?",
+			"answer1": "try, catch, valid, invalid",
+			"answer2": "try, valid, finally, throw",
+			"answer3": "try, catch, finally, throw",
+			"answer4": "finally, throw, valid, invalid",
+			"correct": "try, catch, finally, throw"
+		},
+		{
+			"question": "How could you pause a thread for three seconds?",
+			"answer1": "Thread.Pause(3000);",
+			"answer2": "Thread.Resume(-3000);",
+			"answer3": "Thread.Suspend(3000);",
+			"answer4": "Thread.Sleep(3000);",
+			"correct": "Thread.Sleep(3000);"
+		},
+		{
+			"question": "Which statement is True?",
+			"answer1": "All are true.",
+			"answer2": "None are true.",
+			"answer3": "string is a value type.",
+			"answer4": "string is an alias for String",
+			"correct": "string is an alias for String"
+		},
+		{
+			"question": "When will the code inside finally block be executed in a try-catch statement?",
+			"answer1": "if there is an error, it won't execute at all",
+			"answer2": "between the try and catch blocks",
+			"answer3": "after the try and catch blocks",
+			"answer4": "when the finally block overrides the catch block and executes in its place",
+			"correct": "after the try and catch blocks"
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"questions": [
+		{
+			"question": "What data structure does a binary tree degenerate to if it isn't balanced properly?",
+			"answer1": "linked list",
+			"answer2": "queue",
+			"answer3": "set",
+			"answer4": "OrderedDict",
+			"correct": "linked list"
+		},
+		{
+			"question": "What built-in list method would you use to remove items from a list?",
+			"answer1": ".delete() method",
+			"answer2": "pop(my_list)",
+			"answer3": "del(my_list)",
+			"answer4": ".pop() method",
+			"correct": ".pop() method"
+		},
+		{
+			"question": "What built-in Python data type is commonly used to represent a stack?",
+			"answer1": "set",
+			"answer2": "list",
+			"answer3": "None",
+			"answer4": "dictionary",
+			"correct": "list"
+		},
+		{
+			"question": "What is the term used to describe items that may be passed into a function?",
+			"answer1": "arguments",
+			"answer2": "paradigms",
+			"answer3": "attributes",
+			"answer4": "decorators",
+			"correct": "arguments"
+		},
+		{
+			"question": "Which collection type is used to associate values with unique keys?",
+			"answer1": "slot",
+			"answer2": "dictionary",
+			"answer3": "queue",
+			"answer4": "sorted list",
+			"correct": "dictionary"
+		},
+		{
+			"question": "What is the algorithmic paradigm of quick sort?",
+			"answer1": "dynamic programming",
+			"answer2": "divide and conquer",
+			"answer3": "decrease and conquer",
+			"answer4": "backtracking",
+			"correct": "divide and conquer"
+		},
+		{
+			"question": "What symbol(s) do you use to assess equality between two elements?",
+			"answer1": "&&",
+			"answer2": "=",
+			"answer3": "==",
+			"answer4": "||",
+			"correct": "=="
+		},
+		{
+			"question": "What value would be returned by this check for equality? 5 != 6",
+			"answer1": "yes",
+			"answer2": "False",
+			"answer3": "True",
+			"answer4": "None",
+			"correct": "True"
+		},
+		{
+			"question": "What does a generator return?",
+			"answer1": "None",
+			"answer2": "An iterable object",
+			"answer3": "A linked list data structure from a non-empty list",
+			"answer4": "All the keys of the given dictionary",
+			"correct": "An iterable object"
+		},
+		{
+			"question": "What file is imported to use dates in python?",
+			"answer1": "datetime",
+			"answer2": "dateday",
+			"answer3": "daytime",
+			"answer4": "timedate",
+			"correct": "datetime"
+		}
+	]
+}

@@ -4,10 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#7C7B7B"
+    android:background="@drawable/light_orange_blur"
     tools:context=".activity.QuizActivity">
 
     <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_15sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         android:layout_above="@id/answer1Button"
         android:layout_marginBottom="@dimen/_50sdp"
@@ -31,11 +32,14 @@
         android:outlineAmbientShadowColor="@color/black"
         android:outlineSpotShadowColor="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_50sdp"
+        android:layout_height="@dimen/_15sdp"
         android:layout_above="@id/answer1Button"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:progressDrawable="@drawable/custom_progress_bg"
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/answer1Button"
+        android:layout_marginTop="@dimen/_8sdp"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_above="@id/answer2Button"
@@ -43,8 +47,9 @@
         android:layout_marginRight="@dimen/_7sdp"
         android:layout_marginLeft="@dimen/_7sdp"
         app:cardCornerRadius="@dimen/_10sdp"
+        android:background="@drawable/round_back_orange"
         android:text="Answer 1" />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/answer2Button"
         android:textColor="@color/black"
         android:layout_width="match_parent"
@@ -53,21 +58,26 @@
         android:layout_marginRight="@dimen/_7sdp"
         android:layout_marginLeft="@dimen/_7sdp"
         app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/round_back_orange"
         android:text="Answer 2" />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/answer3Button"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_above="@id/answer4Button"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginRight="@dimen/_7sdp"
         android:layout_marginLeft="@dimen/_7sdp"
         app:cardCornerRadius="@dimen/_10sdp"
+        android:background="@drawable/round_back_orange"
         android:text="Answer 3" />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/answer4Button"
         android:textColor="@color/black"
         android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_75sdp"
         android:layout_above="@id/nextBtn"
         android:layout_alignParentBottom="true"
@@ -75,16 +85,18 @@
         android:layout_marginRight="@dimen/_7sdp"
         android:layout_marginLeft="@dimen/_7sdp"
         app:cardCornerRadius="@dimen/_10sdp"
+        android:background="@drawable/round_back_orange"
         android:text="Answer 4" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/nextBtn"
         android:layout_width="match_parent"
-        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/_7sdp"
         android:layout_marginLeft="@dimen/_7sdp"
+        android:background="@drawable/round_back_orange"
         android:text="Next Question" />
 
 </RelativeLayout>

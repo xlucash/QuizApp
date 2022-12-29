@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -38,10 +37,13 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     CountDownTimer countDownTimer;
     int timeValueInSeconds = 30;
     private ProgressBar timerProgressBar;
+    private String selectedTopic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        selectedTopic = getIntent().getStringExtra("quizTopic");
 
         questionTextView = (TextView) findViewById(R.id.questionText);
 
@@ -68,6 +70,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         timerProgressBar.setMax(30);
         timerProgressBar.setMin(0);
 
+
         countDownTimer = new CountDownTimer(30000, 1000) {
             @Override
             public void onTick(long l) {
@@ -93,7 +96,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             }
         }.start();
 
-        loadAllQuestions();
+        loadAllQuestions(selectedTopic);
         Collections.shuffle(questionList);
         setQuestionOnScreen(currentQuestion);
     }
@@ -163,18 +166,35 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         setQuestionOnScreen(currentQuestion);
         timeValueInSeconds=31;
         countDownTimer.start();
+        setClickableOn();
     }
 
     private void pickWrongAnswer() {
         wrongAnswers++;
         Toast.makeText(QuizActivity.this, "Wrong! Correct answer: "+questionList.get(currentQuestion).getAnswerCorrect(), Toast.LENGTH_LONG).show();
         countDownTimer.cancel();
+        setClickableOff();
     }
 
     private void pickCorrectAnswer() {
         correctAnswers++;
         Toast.makeText(QuizActivity.this, "Correct!", Toast.LENGTH_LONG).show();
         countDownTimer.cancel();
+        setClickableOff();
+    }
+
+    private void setClickableOff() {
+        answerOneBtn.setClickable(false);
+        answerTwoBtn.setClickable(false);
+        answerThreeBtn.setClickable(false);
+        answerFourBtn.setClickable(false);
+    }
+
+    private void setClickableOn() {
+        answerOneBtn.setClickable(true);
+        answerTwoBtn.setClickable(true);
+        answerThreeBtn.setClickable(true);
+        answerFourBtn.setClickable(true);
     }
 
     public void setRightColor(Button button) {
@@ -200,11 +220,11 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         answerFourBtn.setText(questionList.get(number).getAnswerFour());
     }
 
-    private void loadAllQuestions() {
+    private void loadAllQuestions(String quizName) {
         questionList = new ArrayList<>();
 
         try {
-            JSONObject jsonObject = new JSONObject(loadJSONFromAsset(this));
+            JSONObject jsonObject = new JSONObject(loadJSONFromAsset(quizName,this));
             JSONArray questions = (JSONArray) jsonObject.getJSONArray("questions");
             for(int i=0; i<questions.length(); i++) {
                 JSONObject question = questions.getJSONObject(i);
@@ -223,10 +243,10 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private String loadJSONFromAsset(Context context) {
+    private String loadJSONFromAsset(String quizName, Context context) {
         String json = null;
         try {
-            InputStream is = context.getAssets().open("questions.json");
+            InputStream is = context.getAssets().open(quizName+".json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
