@@ -65,6 +65,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         goNextBtn = (Button) findViewById(R.id.nextBtn);
         goNextBtn.setOnClickListener(this);
+        goNextBtn.setClickable(false);
 
         timerProgressBar = (ProgressBar) findViewById(R.id.timer);
         timerProgressBar.setMax(30);
@@ -188,6 +189,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         answerTwoBtn.setClickable(false);
         answerThreeBtn.setClickable(false);
         answerFourBtn.setClickable(false);
+        goNextBtn.setClickable(true);
     }
 
     private void setClickableOn() {
@@ -195,6 +197,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         answerTwoBtn.setClickable(true);
         answerThreeBtn.setClickable(true);
         answerFourBtn.setClickable(true);
+        goNextBtn.setClickable(false);
     }
 
     public void setRightColor(Button button) {
