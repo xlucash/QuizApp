@@ -42,32 +42,16 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.javaLayout:
-                selectedTopic = "java";
-                javaLinearLayout.setBackgroundResource(R.drawable.round_back_gray_creamy);
-                phpLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
-                csharpLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
-                pythonLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
+                selectedTopicSetBackground("java", javaLinearLayout, phpLinearLayout, csharpLinearLayout, pythonLinearLayout);
                 break;
             case R.id.phpLayout:
-                selectedTopic = "php";
-                phpLinearLayout.setBackgroundResource(R.drawable.round_back_gray_creamy);
-                javaLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
-                csharpLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
-                pythonLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
+                selectedTopicSetBackground("php", phpLinearLayout, javaLinearLayout, csharpLinearLayout, pythonLinearLayout);
                 break;
             case R.id.csharpLayout:
-                selectedTopic = "csharp";
-                csharpLinearLayout.setBackgroundResource(R.drawable.round_back_gray_creamy);
-                phpLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
-                javaLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
-                pythonLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
+                selectedTopicSetBackground("csharp", csharpLinearLayout, phpLinearLayout, javaLinearLayout, pythonLinearLayout);
                 break;
             case R.id.pythonLayout:
-                selectedTopic = "python";
-                pythonLinearLayout.setBackgroundResource(R.drawable.round_back_gray_creamy);
-                phpLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
-                csharpLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
-                javaLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
+                selectedTopicSetBackground("python", pythonLinearLayout, phpLinearLayout, csharpLinearLayout, javaLinearLayout);
                 break;
             case R.id.startBtn:
                 if(selectedTopic.isEmpty()) {
@@ -81,5 +65,13 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                 break;
         }
 
+    }
+
+    private void selectedTopicSetBackground(String topic, LinearLayout selectedLinearLayout, LinearLayout secondLinearLayout, LinearLayout thirdLinearLayout, LinearLayout fourthLinearLayout) {
+        selectedTopic = topic;
+        selectedLinearLayout.setBackgroundResource(R.drawable.round_back_gray_creamy);
+        secondLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
+        thirdLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
+        fourthLinearLayout.setBackgroundResource(R.drawable.round_back_creamy);
     }
 }

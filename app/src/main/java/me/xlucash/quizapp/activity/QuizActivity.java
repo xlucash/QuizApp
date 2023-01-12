@@ -28,14 +28,14 @@ import me.xlucash.quizapp.R;
 import me.xlucash.quizapp.model.Question;
 
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener{
-    TextView questionTextView;
-    Button answerOneBtn, answerTwoBtn, answerThreeBtn, answerFourBtn, goNextBtn;
-    List<Question> questionList;
-    int currentQuestion = 0;
-    int correctAnswers = 0;
-    int wrongAnswers = 0;
-    CountDownTimer countDownTimer;
-    int timeValueInSeconds = 30;
+    private TextView questionTextView;
+    private Button answerOneBtn, answerTwoBtn, answerThreeBtn, answerFourBtn, goNextBtn;
+    private List<Question> questionList;
+    private int currentQuestion = 0;
+    private int correctAnswers = 0;
+    private int wrongAnswers = 0;
+    private CountDownTimer countDownTimer;
+    private int timeValueInSeconds = 30;
     private ProgressBar timerProgressBar;
     private String selectedTopic;
     @Override
